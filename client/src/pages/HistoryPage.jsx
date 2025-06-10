@@ -35,7 +35,7 @@ const HistoryPage = () => {
         }
 
         try {
-            const response = await fetch('http://localhost:3001/api/history', {
+      const response = await fetch('/api/history', {
                 headers: { 'Authorization': `Bearer ${token}` }
             });
 
@@ -85,7 +85,7 @@ const HistoryPage = () => {
         const token = localStorage.getItem('token');
 
         try {
-            const response = await fetch(`http://localhost:3001/api/history/${itemToDelete.id}`, {
+        const response = await fetch(`/api/history/${itemToDelete.id}`, {
                 method: 'DELETE',
                 headers: { 'Authorization': `Bearer ${token}` }
             });

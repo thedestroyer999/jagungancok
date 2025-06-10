@@ -38,7 +38,7 @@ const ProfilePage = () => {
         return;
       }
       try {
-        const response = await fetch("http://localhost:3001/api/profile", {
+       const response = await fetch("/api/profile", {
           headers: { Authorization: `Bearer ${token}` },
         });
         if (response.status === 401 || response.status === 403) {
@@ -83,7 +83,7 @@ const ProfilePage = () => {
     const token = localStorage.getItem("token");
 
     try {
-      const response = await fetch("http://localhost:3001/api/profile/details", {
+ const response = await fetch("/api/profile/details", {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -124,7 +124,7 @@ const ProfilePage = () => {
     const token = localStorage.getItem("token");
 
     try {
-      const response = await fetch("http://localhost:3001/api/profile/password", {
+   const response = await fetch("/api/profile/password", {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",

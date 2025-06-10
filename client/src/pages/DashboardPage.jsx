@@ -25,7 +25,7 @@ const DashboardPage = () => {
       }
 
       try {
-        const response = await fetch('http://localhost:3001/api/stats', {
+        const response = await fetch('/api/stats', {
           headers: { Authorization: `Bearer ${token}` },
         });
 

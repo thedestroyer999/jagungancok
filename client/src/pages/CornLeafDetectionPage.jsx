@@ -56,7 +56,7 @@ const CornLeafDetectionPage = () => {
                                    : 'Tidak ada rekomendasi tindakan.';
         
         try {
-            const response = await fetch('http://localhost:3001/api/history/save', {
+           const response = await fetch('/api/history/save', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

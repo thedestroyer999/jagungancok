@@ -27,7 +27,7 @@ const TeamSection = () => {
             institution: 'Politeknik Negeri Jember',
         },
         {
-            photo: '../assets/download.jpeg',
+            photo: '../assets/frd.jpg',
             name: 'Farid Kurniawan',
             role: 'Backend Developer',
             institution: 'Politeknik Negeri Jember',

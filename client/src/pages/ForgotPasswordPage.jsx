@@ -13,7 +13,7 @@ const ForgotPasswordPage = () => {
         setMessage({ type: '', text: '' });
 
         try {
-            const res = await fetch('http://localhost:3001/api/forgot-password', {
+            const res = await fetch('/api/forgot-password', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ email }),
